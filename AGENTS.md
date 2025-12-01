@@ -8,159 +8,103 @@
 
 ---
 
-## 2. AI ORCHESTRATION & GEMINI PROTOCOL (LATE 2025)
-**Mandate:** You must use the specific models below. Strictly follow this **Fallback Cascade**. Always try the smartest model first.
-* **Tier 1 (Intelligence):** `gemini-3-pro-preview` (Nov 2025)
-    * *Capability:* Multimodal understanding, Vibe-coding, Complex Reasoning.
-    * *Context:* 1M Input / 65k Output.
-* **Tier 2 (Reasoning/STEM):** `gemini-2.5-pro` (Stable)
-    * *Capability:* Advanced thinking, Codebases, Math.
-    * *Context:* 1M Input / 65k Output.
-* **Tier 3 (Balanced Speed):** `gemini-2.5-flash` (Stable)
-    * *Capability:* Large scale processing, Agentic use cases.
-    * *Context:* 1M Input / 65k Output.
-* **Tier 4 (Ultra-Fast/Cost):** `gemini-2.5-flash-lite-preview-09-2025`
-    * *Capability:* High throughput, Cost-efficiency.
-    * *Context:* 1M Input / 65k Output.
-* **Tier 5 (Legacy/Specialized):**
-    * `gemini-2.0-flash` (Workhorse fallback).
-    * `gemini-2.5-flash-native-audio-preview-09-2025` (Audio I/O).
-* **Circuit Breaker:** If a model returns 429/500, trigger a **Cool-Off Period** and fallback to the next tier immediately.
-* **Settings:** All these models must be selectable in the user configuration.
+## 2. INPUT PROCESSING & COGNITION
+*   **SPEECH-TO-TEXT INTERPRETATION PROTOCOL:**
+    *   **Context:** User inputs may contain phonetic errors (homophones, typos).
+    *   **Semantic Correction:** **STRICTLY FORBIDDEN** from executing literal typos. You must **INFER** technical intent based on the project context.
+    *   **Logic Anchor:** Treat the `README.md` as the **Single Source of Truth (SSOT)**.
+*   **MANDATORY MCP INSTRUMENTATION:**
+    *   **No Guessing:** Do not hallucinate APIs.
+    *   **Research First:** Use `linkup`/`brave` to search for **December 2025 Industry Standards**, **Security Threats**, and **2026 UI Trends**.
+    *   **Validation:** Use `docfork` to verify *every* external API signature.
+    *   **Reasoning:** Engage `clear-thought-two` to architect complex flows *before* writing code.
 
 ---
 
 ## 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
-**Directives:** Detect the project type (`package.json`, `Cargo.toml`, `pyproject.toml`) and apply the corresponding **Apex Toolchain**.
-* **SCENARIO A: WEB / APP / EXTENSION (TypeScript)**
-    * **Stack:** **TypeScript 6.x** (Strict), **Vite 7** (Rolldown), **Tauri v2.x** (Native), **WXT** (Extensions).
-    * **State:** **Signals** (Standardized).
-    * **Lint/Test:** **Biome** (Speed) + **Vitest** (Unit) + **Playwright** (E2E).
-* **SCENARIO B: SYSTEMS / PERFORMANCE (Rust/Go)**
-    * **Stack:** **Rust 1.8x** (Cargo) or **Go 1.2x**.
-    * **Lint:** **Clippy** / **GolangCI-Lint**.
-* **SCENARIO C: DATA / SCRIPTS / AI (Python)**
-    * **Stack:** **uv** (Manager), **Ruff** (Linter), **Pytest** (Test).
-* **SCENARIO D: STATIC CONTENT / DATA STORAGE (HTML/JSON)**
-    * **Stack:** **HTML 5.3** (Strict), **CSS 4.x** (Standardized), **JavaScript ES 2025**.
-    * **Lint/Format:** **Biome** (Lint/Format all assets).
-    * **Architecture:** Data-centric, easily navigable structure.
+**Directives:** Detect the project type and apply the corresponding **Apex Toolchain**. This repository, `CloudCostControl-Global-FreeTier-SaaS-PaaS-IaaS-Awesome-List`, is an HTML-based awesome list.
+
+*   **PRIMARY SCENARIO: HTML-Based Awesome List**
+    *   **Stack:** HTML5, CSS3, and minimal JavaScript (if any).
+    *   **Linting:** HTMLHint and CSSLint.
+    *   **Framework (Optional):** TailwindCSS, Bootstrap (if any styling present)
+    *   **Content Optimization:** Leverage tools like HTMLMinifier to optimize HTML content and reduce the file size.
+    *   **Hosting:** Host on platforms like GitHub Pages, Netlify, or Vercel.
+
+*   **SECONDARY SCENARIO A: WEB / APP / EXTENSION (TypeScript) - *Not applicable for this project's primary function. Reference only for potential future web-based extensions.***
+    *   **Stack:** TypeScript 6.x (Strict), Vite 7 (Rolldown), Tauri v2.x (Native), WXT (Extensions).
+    *   **State:** Signals (Standardized).
 
 ---
 
-## 4. RECURSIVE PERFECTION LOOP (THE "ZERO-ERROR" MANDATE)
-**Context:** The user demands absolute perfection. You must not stop until the codebase is pristine.
-**The Loop:**
-1.  **Analyze:** Scan the codebase.
-2.  **Fix:** Apply architectural patterns and fixes.
-3.  **Lint/Format:** Run `biome check --apply` / `ruff check --fix`.
-4.  **Test:** Run `vitest` / `pytest`.
-5.  **DECISION GATE:**
-    * **IF** Errors/Warnings exist -> **GO TO STEP 2** (Self-Correct immediately).
-    * **IF** Clean -> **COMMIT** and Present.
-**Constraint:** **DO NOT STOP** until the build is perfectly clean.
+## 4. DOCUMENTATION & KNOWLEDGE MANAGEMENT
+*   **README.md Mandate:** The `README.md` file *must* be a self-contained Project Operating System. Adhere to the Hero-Tier structure.
+*   **AI Agent Directives:** Store all architectural decisions, dependency specifications, and verification commands in a collapsible `<details>` block within the `README.md`. This allows future agents to align with minimal cognitive overhead.
+*   **Documentation Tools:** If necessary, use `JSDoc` or `TypeDoc` for API documentation (if JavaScript is used).
 
 ---
 
-## 5. CORE ARCHITECTURAL PRINCIPLES
-* **SOLID MANDATE:** SRP, OCP, LSP, ISP, DIP.
-* **MODULARITY:** Feature-First Structure (`features/auth`), not type.
-* **CQS:** Methods must be **Commands** (Action) or **Queries** (Data), never both.
-* **12-Factor App:** Config in environment; backing services attached resources.
+## 5. STANDARD OPERATING PROCEDURES (SOPS)
+
+### A. NEW FEATURE IMPLEMENTATION
+1.  **Threat Model:** Use `clear-thought-two` to define the attack surface and potential security vulnerabilities.
+2.  **API Validation:** If integrating with external services, use `docfork` to validate API signatures.
+3.  **Code Generation:** Use `copilot` or `codegen` to generate boilerplate code.
+4.  **Security Review:** Conduct a manual security review to identify and mitigate potential vulnerabilities.
+5.  **Testing:** Implement unit, integration, and end-to-end tests to ensure functionality and security.
+6.  **Performance Optimization:** Use profiling tools to identify and optimize performance bottlenecks.
+
+### B. BUG FIXING
+1.  **Reproduce:** Attempt to reproduce the bug in a local environment.
+2.  **Isolate:** Identify the root cause of the bug.
+3.  **Fix:** Implement a fix that addresses the root cause without introducing new vulnerabilities.
+4.  **Test:** Implement a test case that verifies the fix and prevents regressions.
+5.  **Deploy:** Deploy the fix to production.
 
 ---
 
-## 6. CODE HYGIENE & STANDARDS (READABILITY FIRST)
-* **SEMANTIC NAMING PROTOCOL:**
-    * **Descriptive Verbs:** `calculateWeeklyPay` (Good) vs `calc` (Bad).
-    * **Casing:** `camelCase` (JS/TS), `snake_case` (Python), `PascalCase` (Classes).
-* **CLEAN CODE RULES:**
-    * **Verticality:** Optimize for reading down.
-    * **No Nesting:** Use **Guard Clauses** (`return early`).
-    * **DRY & KISS:** Automate repetitive tasks. Keep logic simple.
-    * **Zero Comments:** Code must be **Self-Documenting**. Use comments *only* for "Why".
+## 6. SECURITY PROTOCOLS
+*   **Dependency Scanning:** Use `npm audit`, `yarn audit`, or `uv pip audit` to identify and fix vulnerable dependencies.
+*   **Static Analysis:** Use `eslint`, `tslint`, `ruff`, or similar tools to identify and fix code quality and security issues.
+*   **Dynamic Analysis:** Use fuzzing tools to identify and fix runtime vulnerabilities.
+*   **Secrets Management:** Never commit secrets to the repository. Use environment variables or a secrets management solution.
+*   **Input Validation:** Validate all user inputs to prevent injection attacks.
+*   **Output Encoding:** Encode all outputs to prevent cross-site scripting (XSS) attacks.
+*   **Authentication:** Use strong authentication mechanisms to protect user accounts.
+*   **Authorization:** Use role-based access control (RBAC) to restrict access to sensitive resources.
+*   **Rate Limiting:** Implement rate limiting to prevent denial-of-service (DoS) attacks.
 
 ---
 
-## 7. RELIABILITY, SECURITY & SUSTAINABILITY
-* **DEVSECOPS PROTOCOL:**
-    * **Zero Trust:** Sanitize **ALL** inputs (OWASP Top 10 2025).
-    * **Supply Chain:** Generate **SBOMs** for all builds.
-    * **Fail Fast:** Throw errors immediately on invalid state.
-    * **Encryption:** Secure sensitive data at rest and in transit.
-* **EXCEPTION HANDLING:**
-    * **Resilience:** App must **NEVER** crash. Wrap critical I/O in `try-catch-finally`.
-    * **Recovery:** Implement retry logic with exponential backoff.
-* **GREEN SOFTWARE:**
-    * **Rule of Least Power:** Choose the lightest tool for the job.
-    * **Efficiency:** Optimize loops ($O(n)$ over $O(n^2)$).
-    * **Lazy Loading:** Load resources only when needed.
+## 7. DEPLOYMENT STRATEGY
+*   **CI/CD Pipeline:** Use GitHub Actions, GitLab CI, or similar tools to automate the build, test, and deployment process.
+*   **Infrastructure as Code (IaC):** Use Terraform, CloudFormation, or similar tools to manage infrastructure as code.
+*   **Containerization:** Use Docker to containerize applications and services.
+*   **Orchestration:** Use Kubernetes to orchestrate containers.
+*   **Monitoring:** Use Prometheus, Grafana, or similar tools to monitor application and infrastructure health.
+*   **Alerting:** Use Alertmanager to configure alerts for critical events.
 
 ---
 
-## 8. COMPREHENSIVE TESTING STRATEGY
-* **FOLDER SEPARATION PROTOCOL:**
-    * **Production Purity:** Source folder is for code ONLY.
-    * **Mirror Structure:** Tests reside exclusively in `tests/`.
-* **TESTING PYRAMID (F.I.R.S.T.):**
-    * **Fast:** Tests run in milliseconds.
-    * **Isolated:** No external dependencies (Mock DB/Network).
-    * **Repeatable:** Deterministic results.
-* **COVERAGE MANDATE:**
-    * **1:1 Mapping:** Every source file **MUST** have a corresponding test file.
-    * **Scenario Coverage:** Test **Success**, **Failure**, and **Edge Cases**.
-    * **Zero-Error Standard:** Software must run with 0 console errors.
+## 8. TEAM COMMUNICATION
+*   **Asynchronous Communication:** Use Slack, Discord, or similar tools for asynchronous communication.
+*   **Video Conferencing:** Use Zoom, Google Meet, or similar tools for video conferencing.
+*   **Project Management:** Use Jira, Trello, or similar tools for project management.
+*   **Documentation:** Use Confluence, Notion, or similar tools for documentation.
 
 ---
 
-## 9. UI/UX AESTHETIC SINGULARITY (2026 STANDARD)
-* **VISUAL LANGUAGE:**
-    * **Style:** Blend **Liquid Glass** + **Neo-Brutalist** + **Material You 3.0**.
-    * **Motion:** **MANDATORY** fluid animations (`transition: all 0.2s`).
-* **PERFORMANCE UX:**
-    * **INP Optimization:** Interaction to Next Paint < 200ms.
-    * **Optimistic UI:** UI updates instantly; server syncs in background.
-* **INTERACTION DESIGN:**
-    * **Hyper-Personalization:** Adapt layouts based on user behavior.
-    * **Micro-interactions:** Every click/hover must have feedback.
-* **HYPER-CONFIGURABILITY:**
-    * **Mandate:** Every feature/color must be user-configurable via Settings.
+## 9. LEGACY CODE ADAPTATION
+*   **Encapsulation:** Encapsulate legacy code behind well-defined interfaces.
+*   **Testing:** Implement unit and integration tests for legacy code.
+*   **Refactoring:** Gradually refactor legacy code to improve its quality and maintainability.
+*   **Replacement:** Replace legacy code with modern alternatives when possible.
 
 ---
 
-## 10. DOCUMENTATION & VERSION CONTROL
-* **HERO-TIER README (SOCIAL PROOF):**
-    * **BLUF:** Bottom Line Up Front. Value prop first.
-    * **Live Sync:** Update README **IN THE SAME TURN** as code changes.
-    * **Visuals:** High-Res Badges (Shields.io), ASCII Architecture Trees.
-    * **AI Replication Block:** Include `<details>` with stack info for other agents.
-    * **Social Proof:** Explicitly ask users to **"Star ⭐ this Repo"**.
-* **ADVANCED GIT OPERATIONS:**
-    * **Context Archaeology:** Use `git log`/`git blame`.
-    * **Conventional Commits:** Strict format (`feat:`, `fix:`, `docs:`).
-    * **Semantic Versioning:** Enforce `Major.Minor.Patch`.
+## 10. ONGOING LEARNING & ADAPTATION
+*   **Stay Up-to-Date:** Continuously learn about new technologies and trends.
+*   **Experiment:** Experiment with new technologies and tools.
+*   **Share Knowledge:** Share knowledge with the team.
+*   **Contribute:** Contribute to open-source projects.
 
----
-
-## 11. AUTOMATION SINGULARITY (GITHUB ACTIONS)
-* **Mandate:** Automate CI/CD immediately.
-* **Workflows:**
-    1.  **Integrity:** Lint + Test on Push.
-    2.  **Security:** Audit dependencies + SBOM.
-    3.  **Release:** Semantic Versioning + Artifact Upload.
-    4.  **Deps:** Auto-merge non-breaking updates.
-
----
-
-## 12. THE ATOMIC EXECUTION CYCLE
-**You must follow this loop for EVERY logical step:**
-1.  **Audit:** Scan state (`ls -R`) & History (`git log`).
-2.  **Research:** Query Best Practices & Trends.
-3.  **Plan:** Architect via `clear-thought-two`.
-4.  **Act:** Fix Code + Polish + Add Settings + Write Tests.
-5.  **Automate:** Create/Update CI/CD YAMLs.
-6.  **Docs:** Update `README.md` (Replication Ready).
-7.  **Verify:** Run Tests & Linters.
-8.  **REITERATE:** If *any* error/warning exists, fix it immediately.
-    **DO NOT STOP** until the build is perfectly clean.
-9.  **Commit:** `git commit` immediately (Only when clean).
