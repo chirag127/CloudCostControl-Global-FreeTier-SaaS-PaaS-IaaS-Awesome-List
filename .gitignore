@@ -1,31 +1,30 @@
-# Dependency directories
-/node_modules
+# Dependency Management & Build Artifacts
+node_modules/
+*.log
+*.cache
+.pnpm-debug.log
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Temporary/Generated Files
 /dist
 /build
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# Test/Coverage Reports
+coverage/
+*.lcov
 
-# Editor specific
-.vscode/
-.idea/
+# Specific to Awesome Lists/Markdown Maintenance
+# If using any local tooling (like a linter/formatter), ignore its cache
+.ruff_cache/
+.biome.jsonc.lock
 
-# Logs and temporary files
-*.log
-*.tmp
-*.swp
-
-# Artifacts for HTML/Static Sites (Since the original repo was HTML/Static)
-/coverage
-
-# Build artifacts (If any compilation steps were added later, though this is static)
-/out
-
-# Configuration and secrets (Safety first)
-.env
-.env.*
-!*.example.env
-
-# CI/CD artifacts (GitHub Actions temporary storage)
-.github/workflows/*.lock
+# Cloud Cost Control Specific (If using any local data or generated JSON/CSV)
+*.csv
+*.jsonc.tmp
